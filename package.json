@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/UCDM/webpack_practice/issues"
   },
-  "homepage": "https://github.com/UCDM/webpack_practice#readme"
+  "homepage": "https://github.com/UCDM/webpack_practice#readme",
+  "private": true
 }
