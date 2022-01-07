@@ -11,10 +11,13 @@
     "url": "git+https://github.com/UCDM/webpack_practice.git"
   },
   "author": "UCDM",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/UCDM/webpack_practice/issues"
   },
   "homepage": "https://github.com/UCDM/webpack_practice#readme",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "webpack": "^4.41.6"
+  }
 }
