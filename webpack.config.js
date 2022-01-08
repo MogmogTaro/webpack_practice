@@ -27,6 +27,8 @@ module.exports = {
     // cssを外部スタイルシートとして読み込めるようにするプラグイン
     new MiniCssExtractPlugin(),
     // 自動でindex.htmlHTMLを生成
-    new HtmlWebpackPlugin()
+    new HtmlWebpackPlugin({
+      template: './src/index.html'
+    })
   ]
 }
