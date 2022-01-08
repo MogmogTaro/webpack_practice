@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-  entry: './src/javascripts/index.js',
+  entry: './src/javascripts/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'javascripts/main.js'
@@ -27,7 +27,7 @@ module.exports = {
   plugins: [
     // cssを外部スタイルシートとして読み込めるようにするプラグイン
     new MiniCssExtractPlugin({
-      filename: './stylesheets/my.css'
+      filename: './stylesheets/main.css'
     }),
     // 自動でindex.htmlHTMLを生成
     new HtmlWebpackPlugin({
