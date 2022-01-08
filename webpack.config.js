@@ -26,7 +26,9 @@ module.exports = {
   },
   plugins: [
     // cssを外部スタイルシートとして読み込めるようにするプラグイン
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      filename: 'my.css'
+    }),
     // 自動でindex.htmlHTMLを生成
     new HtmlWebpackPlugin({
       template: './src/index.html'
