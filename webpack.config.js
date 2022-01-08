@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/javascripts/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'javascripts/main.js'
@@ -31,7 +31,7 @@ module.exports = {
     }),
     // 自動でindex.htmlHTMLを生成
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/templete/index.html'
     }),
     new CleanWebpackPlugin()
   ]
