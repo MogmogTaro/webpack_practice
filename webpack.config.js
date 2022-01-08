@@ -7,7 +7,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'main.js'
+    filename: 'javascripts/main.js'
   },
   module: {
     rules: [
@@ -27,7 +27,7 @@ module.exports = {
   plugins: [
     // cssを外部スタイルシートとして読み込めるようにするプラグイン
     new MiniCssExtractPlugin({
-      filename: 'my.css'
+      filename: './stylesheets/my.css'
     }),
     // 自動でindex.htmlHTMLを生成
     new HtmlWebpackPlugin({
