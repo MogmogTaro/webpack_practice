@@ -21,6 +21,17 @@ module.exports = {
             loader: 'css-loader',
           }
         ]
+      },
+      {
+        test: /\.jpg/,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              esModule: false,
+            }
+          }
+        ]
       }
     ]
   },
