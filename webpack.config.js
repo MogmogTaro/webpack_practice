@@ -41,7 +41,10 @@ module.exports = {
             loader: 'html-loader'
           },
           {
-            loader: 'pug-html-loader'
+            loader: 'pug-html-loader',
+            options: {
+              pretty: true,
+            }
           }
         ]
       }
@@ -54,7 +57,7 @@ module.exports = {
     }),
     // 自動でindex.htmlHTMLを生成
     new HtmlWebpackPlugin({
-      template: './src/templete/index.html'
+      template: './src/templete/index.pug'
     }),
     new CleanWebpackPlugin()
   ]
