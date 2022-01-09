@@ -33,6 +33,17 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.pug/,
+        use: [
+          {
+            loader: 'html-loader'
+          },
+          {
+            loader: 'pug-html-loader'
+          }
+        ]
       }
     ]
   },
