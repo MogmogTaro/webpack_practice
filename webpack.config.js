@@ -57,7 +57,12 @@ module.exports = {
     }),
     // 自動でindex.htmlHTMLを生成
     new HtmlWebpackPlugin({
-      template: './src/templete/index.pug'
+      template: './src/templete/index.pug',
+      filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templete/access.pug',
+      filename: 'access.html'
     }),
     new CleanWebpackPlugin()
   ]
