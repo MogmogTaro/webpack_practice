@@ -64,6 +64,10 @@ module.exports = {
       template: './src/templete/access.pug',
       filename: 'access.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/templete/members/taro.pug',
+      filename: 'members/taro.html'
+    }),
     new CleanWebpackPlugin()
   ]
 }
