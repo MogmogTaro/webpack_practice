@@ -43,7 +43,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.jpg|\.png/,
+        test: /\.(jpg|png|jpeg)/,
         use: [
           {
             loader: "file-loader",
@@ -51,6 +51,9 @@ module.exports = {
               esModule: false,
               name: 'images/[name].[ext]'
             }
+          },
+          {
+            loader: 'image-webpack-loader'
           }
         ]
       },
